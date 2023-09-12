@@ -1,0 +1,152 @@
+html{
+    // overflow-x: hidden;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Merriweather Sans', sans-serif;
+    // overflow-x: hidden;
+}
+main.main{
+    overflow: hidden;
+}
+.container{
+    max-width: $container;
+    padding: 0 30px;
+    margin: 0 auto;
+}
+.title{
+    font-family: "Merriweather";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    color: $black;
+    & span.text-green{
+        color: $green;
+    }
+    & span.text-yellow{
+        color: $yellow;
+    }
+}
+.title-50{
+    font-size: 50px;
+}
+.title-white{
+    color: #fff;
+}
+.list {
+    & li{
+        /* text_1 */
+        font-family: "Merriweather Sans";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        color: $black_02;
+        margin-bottom: 10px;
+        list-style-type: none;
+        padding-left: 18px;
+        position: relative;
+        &:last-child{margin-bottom: 0;}
+        &::before{
+            content: "";
+            width: 10px;
+            height: 10px;
+            background-color: $yellow;
+            position: absolute;
+            left: 0;
+            top: 50%;
+            border-radius: 50%;
+            transform: translate(0%,-50%);
+        }
+    }
+}
+.proposal {
+    padding: 10px 22px 12px 25px;
+    background-color: $gray;
+    border-radius: 20px;
+    position: relative;
+    & p {
+        color: $black;
+        font-family: "Merriweather Sans";
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        & span{
+            text-transform: uppercase;
+            position: relative;
+            &::after{
+                content: url('../images/proposal-shape.svg');
+                position: absolute;
+                bottom: -9px;
+                left: 0;
+                width: 100%;
+            }
+        }
+    }
+    &__shape{
+        width: 104px;
+        height: 40px;
+        background-color: $yellow;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        position: absolute;
+        right: 4.5%;
+        top: -30px;
+    }
+}
+.btn {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 6px 17px 6px 6px;
+    border-radius: 100px;
+    background-color: $green;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    color: #FFF;
+    font-family: "Merriweather Sans";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    animation: pulse 2s infinite;
+}
+.btn:hover{
+    animation: none;
+}
+.btn:hover .btn--arrow{
+    transform: translate(10px);
+}
+.btn--arrow {
+
+    width: 42px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $yellow;
+    border-radius: 50%;
+    padding: 10px;
+    transition: all .3s ease-in-out;
+}
+
+  @keyframes pulse {
+    0% {
+      box-shadow: 0 0 0 0 $green;
+    }
+    70% {
+        box-shadow: 0 0 0 10px rgba(204,169,44, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(204,169,44, 0);
+    }
+  }

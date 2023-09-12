@@ -1,0 +1,86 @@
+.reasons {
+    padding-top: 67px;
+    // .reasons__inner
+
+    &__inner {
+
+    }
+
+    // .reasons__title
+
+    &__title {
+        text-align: center;
+    }
+
+    // .reasons__descr
+
+    &__descr {
+        width: 48.5%;
+        font-family: "Merriweather Sans";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        color: $black_02;
+        margin-top: 50px;
+        text-align-last: left;
+    }
+    &__descr-mobile{
+        display: none;
+    }
+}
+.reasons-items {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    // .reasons-items__col--1
+
+    &__col--1 {
+    }
+
+    // .reasons-items__col--2
+
+    &__col--2 {
+        padding-top: 35px;
+    }
+}
+.reasons-item {
+    padding: 16px;
+    border-radius: 20px;
+    background: $gray;
+    display: flex;
+    gap: 10px;
+    margin-top: 27px;
+    &:first-child{
+        margin-top: 35px;
+    }
+    // .reasons-item__icon
+
+    &__icon {
+    }
+    &__mobile{
+        display: none;
+    }
+    // .reasons-item__descr
+
+    &__descr {
+        width: 89%;
+        & span{
+            color: $green;
+        }
+        & p{
+            color: $black;
+            /* text_1 */
+            font-family: "Merriweather Sans";
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+    }
+
+    // .reasons-item__img
+
+    &__img {
+    }
+}

@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nutritionist</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;400&family=Merriweather:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../../css/style.css">
+
+</head>
+
+<body>
+    <main class="main">
+        <header class="header">
+    <div class="container">
+        <div class="header__inner">
+            <a href="#" class="header__logo">
+                <img src="../../images/logo.svg" alt="">
+            </a>
+        </div>
+    </div>
+</header>
+        <section class="hero">
+    <div class="container">
+        <div class="hero__inner">
+            <div class="hero__text">
+                <h1 class="title title-50">¿Quieres perder peso pero no sabes por dónde empezar?</h1>
+                <p class="hero__descr">¡Obtén un plan de adelgazamiento personalizado de un dietista calificado ya
+                    mismo!</p>
+                <div class="hero__plan">
+                    <span>¿Qué incluye el plan de adelgazamiento?</span>
+                    <ul class="list">
+                        <li>Cómo comenzar a perder peso hoy mismo.</li>
+                        <li>Selección adecuada de alimentos.</li>
+                        <li>Estilo de vida y entrenamiento.</li>
+                        <li>Secretos y consejos para quemar grasa rápidamente.</li>
+                        <li>Cómo mantener los resultados de por vida.</li>
+                    </ul>
+                </div>
+
+                <div class="hero__proposal proposal">
+                    <div class="proposal__shape">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <g clip-path="url(#clip0_68_729)">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M7.2 7.97356e-07C6.13913 7.97356e-07 5.12172 0.421428 4.37157 1.17157C3.62143 1.92172 3.2 2.93913 3.2 4V4.4576C3.2 5.1744 3.4128 5.8416 3.7792 6.4H2.4C1.76348 6.4 1.15303 6.65286 0.702944 7.10294C0.252856 7.55303 0 8.16348 0 8.8L0 10.4C0 11.0365 0.252856 11.647 0.702944 12.0971C1.15303 12.5471 1.76348 12.8 2.4 12.8H11.2V6.4H12.8V12.8H21.6C22.2365 12.8 22.847 12.5471 23.2971 12.0971C23.7471 11.647 24 11.0365 24 10.4V8.8C24 8.16348 23.7471 7.55303 23.2971 7.10294C22.847 6.65286 22.2365 6.4 21.6 6.4H20.2208C20.5872 5.8416 20.8 5.1744 20.8 4.4576V4C20.8 2.93913 20.3786 1.92172 19.6284 1.17157C18.8783 0.421428 17.8609 7.97356e-07 16.8 7.97356e-07C14.7632 7.97356e-07 12.9792 1.088 12 2.7136C11.5022 1.88541 10.7985 1.20021 9.95736 0.724676C9.11621 0.249143 8.16627 -0.000514917 7.2 7.97356e-07ZM12.8 6.4H17.2576C18.3296 6.4 19.2 5.5296 19.2 4.4576V4C19.2 3.36348 18.9471 2.75303 18.4971 2.30294C18.047 1.85286 17.4365 1.6 16.8 1.6C15.7391 1.6 14.7217 2.02143 13.9716 2.77157C13.2214 3.52172 12.8 4.53913 12.8 5.6V6.4ZM11.2 6.4H6.7424C5.6704 6.4 4.8 5.5296 4.8 4.4576V4C4.8 3.36348 5.05286 2.75303 5.50294 2.30294C5.95303 1.85286 6.56348 1.6 7.2 1.6C7.72529 1.6 8.24543 1.70346 8.73073 1.90448C9.21604 2.1055 9.65699 2.40014 10.0284 2.77157C10.3999 3.14301 10.6945 3.58396 10.8955 4.06927C11.0965 4.55457 11.2 5.07471 11.2 5.6V6.4Z"
+                                    fill="#008202" />
+                                <path
+                                    d="M11.2 14.4H1.59998V20C1.59998 21.0609 2.0214 22.0783 2.77155 22.8284C3.52169 23.5786 4.53911 24 5.59998 24H11.2V14.4ZM12.8 24H18.4C19.4608 24 20.4783 23.5786 21.2284 22.8284C21.9785 22.0783 22.4 21.0609 22.4 20V14.4H12.8V24Z"
+                                    fill="#008202" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_68_729">
+                                    <rect width="24" height="24" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </div>
+                    <p>¡Hemos activado una oferta especial para ti! ¡Completa la encuesta y recibe tu plan de
+                        adelgazamiento personalizado <span>GRATIS!</span></p>
+                </div>
+                <button class="btn hero__btn">
+                    <div class="btn--arrow"><img src="../../images/btn-arrow.svg" alt=""></div>¡Obtener el plan de
+                    adelgazamiento!
+                </button>
+            </div>
+            <div class="hero__img">
+                <img src="../../images/hero__bg.png" alt="">
+                <img src="../../images/hero__bg-2.png" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+        <section class="about">
+    <!-- <div class="about-bg">
+        <img src="../../images/about-bg.svg" alt="">
+    </div> -->
+    <div class="container">
+        <div class="about__inner">
+            <div class="about__img">
+                <img class="about__img__main" src="../../images/about-img.jpg" alt="">
+                <img class="about__img__fruits" src="../../images/about-fruits.png" alt="">
+            </div>
+            <div class="about__info">
+                <h2 class="about__title title title-white">Permíteme presentarte a <span>Sonia</span></h2>
+                <div class="about__descr">
+                    <p>Sonia es la fundadora y creadora de <span>la Fresh Life Clinic</span>, donde ha ayudado a cientos
+                        de personas
+                        a perder peso y establecer una relación saludable con sus cuerpos y la comida.
+                    </p>
+                    <p>Obtuvo su diploma en dietética en Londres, se graduó en pedagogía en la PUC, realizó un posgrado
+                        en nutrición deportiva y obesidad en la USP, se especializó en alimentación saludable en Harvard
+                        y en la ciencia del bienestar en Yale.
+                    </p>
+                    <p>Con su estilo profundo y humorístico, Sonia se esfuerza por democratizar los conceptos clave de
+                        una alimentación saludable y sostenible. Esto la llevó a crear el proyecto Fresh Life Clinic, el
+                        cual proporciona conocimientos esenciales y actuales sobre la pérdida de peso de manera que las
+                        personas puedan tomar decisiones mejores para sus vidas.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+        <section class="reasons">
+    <div class="container">
+        <div class="reasons__inner">
+            <h2 class="title reasons__title">No se trata solo de la dieta: 5 razones por las cuales adelgazar hoy es más
+                difícil que nunca</h2>
+            <p class="reasons__descr">La idea de perder kilos extra no es nueva. Para algunos es una
+                cuestión
+                de belleza, para otros es una cuestión de salud. Puede haber varias razones por las que no
+                logramos
+                adelgazar, pero una te sorprenderá: perder peso hoy en día es mucho más difícil que para
+                aquellos
+                que intentaron hace 20–30 años. Y aquí está por qué:</p>
+            <div class="reasons-items">
+                <div class="reasons-items__col--1">
+                    <div class="reasons-item">
+                        <div class="reasons-item__icon">
+                            <img src="../../images/reasons-item-icon-1.svg" alt="">
+                        </div>
+                        <div class="reasons-item__descr">
+                            <p><span>Disruptores endocrinos</span> - en nuestra comida y en nuestro entorno hay una gran
+                                cantidad de
+                                sustancias llamadas disruptores endocrinos. El bisfenol A, que es un componente común en
+                                muchos envases, puede ingresar a nuestro organismo, acumularse en él y provocar la
+                                obesidad.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="reasons-item">
+                        <div class="reasons-item__icon">
+                            <img src="../../images/reasons-item-icon-2.svg" alt="">
+                        </div>
+                        <div class="reasons-item__descr">
+                            <p><span>Medicamentos</span> - algunos medicamentos pueden provocar aumento de peso. Las
+                                personas
+                                modernas consumen más medicamentos que hace 20–40 años, esto se aplica a los
+                                antidepresivos y otros medicamentos utilizados para tratar trastornos mentales.</p>
+                        </div>
+                    </div>
+                    <div class="reasons-item">
+                        <div class="reasons-item__icon">
+                            <img src="../../images/reasons-item-icon-3.svg" alt="">
+                        </div>
+                        <div class="reasons-item__descr">
+                            <p><span>Edulcorantes artificiales</span> - ahora hay una gran cantidad de productos «sin
+                                azúcar» en las
+                                estanterías de las tiendas, definitivamente más que hace dos o tres décadas. Sin
+                                embargo, solo crean la ilusión de productos más saludables y con menos calorías.</p>
+                        </div>
+                    </div>
+                    <div class="reasons-item">
+                        <div class="reasons-item__icon">
+                            <img src="../../images/reasons-item-icon-4.svg" alt="">
+                        </div>
+                        <div class="reasons-item__descr">
+                            <p><span>Problemas con el microbioma</span> - las bacterias intestinales son mucho más que
+                                simplemente
+                                bacterias que habitan en el intestino. Las alteraciones en la composición del microbioma
+                                pueden llevar no solo a problemas digestivos, sino también a trastornos metabólicos (¡y
+                                aumento de peso!).</p>
+                        </div>
+                    </div>
+                    <div class=" reasons-item reasons-item__mobile">
+                        <div class="reasons-item__icon">
+                            <img src="../../images/reasons-item-icon-5.svg" alt="">
+                        </div>
+                        <div class="reasons-item__descr">
+                            <p><span>Falta de sueño</span> - la vida moderna impone sus condiciones y dormimos menos que
+                                nunca. Y no
+                                solo se trata del trabajo. Estamos rodeados de dispositivos que nos tientan a no
+                                acostarnos a tiempo y, en cambio, pasamos tiempo en redes sociales antes de dormir.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="reasons-items__col--2">
+                    <img class="reasons-item__img" src="../../images/reasons-item-img.jpg" alt="">
+                    <p class="reasons__descr reasons__descr-mobile">La idea de perder kilos extra no es nueva. Para algunos es una
+                        cuestión
+                        de belleza, para otros es una cuestión de salud. Puede haber varias razones por las que no
+                        logramos
+                        adelgazar, pero una te sorprenderá: perder peso hoy en día es mucho más difícil que para
+                        aquellos
+                        que intentaron hace 20–30 años. Y aquí está por qué:</p>
+                    <div class=" reasons-item reasons-item__desktop">
+                        <div class="reasons-item__icon">
+                            <img src="../../images/reasons-item-icon-5.svg" alt="">
+                        </div>
+                        <div class="reasons-item__descr">
+                            <p><span>Falta de sueño</span> - la vida moderna impone sus condiciones y dormimos menos que
+                                nunca. Y no
+                                solo se trata del trabajo. Estamos rodeados de dispositivos que nos tientan a no
+                                acostarnos a tiempo y, en cambio, pasamos tiempo en redes sociales antes de dormir.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+        <section class="action">
+    <div class="container">
+        <div class="action__inner">
+            <div class="action__img">
+                <img src="../../images/action-img.jpg" alt="">
+            </div>
+            <div class="action__text">
+                <h2 class="action__title title">No esperes, ¡comienza hoy mismo!</h2>
+                <div class="action__descr">
+                    <p>Aunque adelgazar se haya vuelto más difícil, con mi plan de adelgazamiento
+                        seguramente lograrás perder todos esos kilos extra para siempre.</p>
+                    <p>El plan de adelgazamiento es individual para cada persona y garantiza el éxito para aquellos que
+                        lo siguen.</p>
+                </div>
+                <div class="action__proposal proposal">
+                    <div class="proposal__shape">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <g clip-path="url(#clip0_68_737)">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M7.2 7.97356e-07C6.13913 7.97356e-07 5.12172 0.421428 4.37157 1.17157C3.62143 1.92172 3.2 2.93913 3.2 4V4.4576C3.2 5.1744 3.4128 5.8416 3.7792 6.4H2.4C1.76348 6.4 1.15303 6.65286 0.702944 7.10294C0.252856 7.55303 0 8.16348 0 8.8L0 10.4C0 11.0365 0.252856 11.647 0.702944 12.0971C1.15303 12.5471 1.76348 12.8 2.4 12.8H11.2V6.4H12.8V12.8H21.6C22.2365 12.8 22.847 12.5471 23.2971 12.0971C23.7471 11.647 24 11.0365 24 10.4V8.8C24 8.16348 23.7471 7.55303 23.2971 7.10294C22.847 6.65286 22.2365 6.4 21.6 6.4H20.2208C20.5872 5.8416 20.8 5.1744 20.8 4.4576V4C20.8 2.93913 20.3786 1.92172 19.6284 1.17157C18.8783 0.421428 17.8609 7.97356e-07 16.8 7.97356e-07C14.7632 7.97356e-07 12.9792 1.088 12 2.7136C11.5022 1.88541 10.7985 1.20021 9.95736 0.724676C9.11621 0.249143 8.16627 -0.000514917 7.2 7.97356e-07ZM12.8 6.4H17.2576C18.3296 6.4 19.2 5.5296 19.2 4.4576V4C19.2 3.36348 18.9471 2.75303 18.4971 2.30294C18.047 1.85286 17.4365 1.6 16.8 1.6C15.7391 1.6 14.7217 2.02143 13.9716 2.77157C13.2214 3.52172 12.8 4.53913 12.8 5.6V6.4ZM11.2 6.4H6.7424C5.6704 6.4 4.8 5.5296 4.8 4.4576V4C4.8 3.36348 5.05286 2.75303 5.50294 2.30294C5.95303 1.85286 6.56348 1.6 7.2 1.6C7.72529 1.6 8.24543 1.70346 8.73073 1.90448C9.21604 2.1055 9.65699 2.40014 10.0284 2.77157C10.3999 3.14301 10.6945 3.58396 10.8955 4.06927C11.0965 4.55457 11.2 5.07471 11.2 5.6V6.4Z"
+                                    fill="#F3D915" />
+                                <path
+                                    d="M11.2 14.3999H1.59998V19.9999C1.59998 21.0608 2.0214 22.0782 2.77155 22.8283C3.52169 23.5785 4.53911 23.9999 5.59998 23.9999H11.2V14.3999ZM12.8 23.9999H18.4C19.4608 23.9999 20.4783 23.5785 21.2284 22.8283C21.9785 22.0782 22.4 21.0608 22.4 19.9999V14.3999H12.8V23.9999Z"
+                                    fill="#F3D915" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_68_737">
+                                    <rect width="24" height="24" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </div>
+                    <p>¡Hemos activado una oferta especial para ti! ¡Completa la encuesta y recibe tu plan de
+                        adelgazamiento personalizado <span>GRATIS!</span></p>
+                </div>
+                <button class="btn hero__btn">
+                    <div class="btn--arrow"><img src="../../images/btn-arrow.svg" alt=""></div>¡Obtener el plan de
+                    adelgazamiento!
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+        <section class="consequences">
+    <div class="consequences-bg">
+        <img src="../../images/consequences-bg.svg" alt="">
+    </div>
+    <div class="container">
+        <div class="consequences__inner">
+            <h2 class="consequences__title title">La obesidad es una <span class="text-green">enfermedad crónica
+                    grave</span></h2>
+            <p class="consequences__descr">Que puede tener múltiples consecuencias negativas para la salud de una
+                persona. Aquí hay algunas de ellas:</p>
+            <div class="consequences-columns">
+                <div class="consequences-col-1 consequences-col-1-desktop">
+                    <div class="consequences-item">
+                        <div class="consequences-item__circle"></div>
+                        <p class="consequences-item__descr">Enfermedades cardiovasculares</p>
+                    </div>
+                    <div class="consequences-item">
+                        <div class="consequences-item__circle"></div>
+                        <p class="consequences-item__descr">Diabetes tipo 2</p>
+                    </div>
+                    <div class="consequences-item">
+                        <div class="consequences-item__circle"></div>
+                        <p class="consequences-item__descr">Enfermedades hepáticas</p>
+                    </div>
+                    <div class="consequences-item">
+                        <div class="consequences-item__circle"></div>
+                        <p class="consequences-item__descr">Problemas respiratorios</p>
+                    </div>
+                    <div class="consequences-item">
+                        <div class="consequences-item__circle"></div>
+                        <p class="consequences-item__descr">Osteoartritis</p>
+                    </div>
+                </div>
+                <!-- Версия для мобилки -->
+                <div class="consequences-col-1 consequences-col-1-mobile">
+                    <div class="consequences-item">
+                        <div class="consequences-item__circle"></div>
+                        <p class="consequences-item__descr">Enfermedades cardiovasculares</p>
+                    </div>
+                    <div class="consequences-item">
+                        <div class="consequences-item__circle"></div>
+                        <p class="consequences-item__descr">Diabetes tipo 2</p>
+                    </div>
+                    <div class="consequences-item">
+                        <div class="consequences-item__circle"></div>
+                        <p class="consequences-item__descr">Enfermedades hepáticas</p>
+                    </div>
+                    <div class="consequences-item">
+                        <div class="consequences-item__circle"></div>
+                        <p class="consequences-item__descr">Osteoartritis</p>
+                    </div>
+                    <div class="consequences-item">
+                        <div class="consequences-item__circle"></div>
+                        <p class="consequences-item__descr">Problemas de salud reproductiva</p>
+                    </div>
+                </div>
+                <!------ Версия для мобилки -->
+                <div class="consequences__img">
+                    <img src="../../images/consequences-img.png" alt="">
+                </div>
+                <div class="consequences-col-2 consequences-col-2-desktop">
+                    <div class="consequences-item">
+                        <div class="consequences-item__circle"></div>
+                        <p class="consequences-item__descr">Problemas psicológicos y sociales</p>
+                    </div>
+                    <div class="consequences-item">
+                        <div class="consequences-item__circle"></div>
+                        <p class="consequences-item__descr">Problemas de salud reproductiva</p>
+                    </div>
+                    <div class="consequences-item">
+                        <div class="consequences-item__circle"></div>
+                        <p class="consequences-item__descr">Disminución de la calidad de vida</p>
+                    </div>
+                    <div class="consequences-item">
+                        <div class="consequences-item__circle"></div>
+                        <p class="consequences-item__descr">Cargas financieras</p>
+                    </div>
+                </div>
+                <!-- Версия для мобилки -->
+                <div class="consequences-col-2 consequences-col-2-mobile">
+                    <div class="consequences-item">
+                        <div class="consequences-item__circle"></div>
+                        <p class="consequences-item__descr">Problemas psicológicos y sociales</p>
+                    </div>
+                    <div class="consequences-item">
+                        <div class="consequences-item__circle"></div>
+                        <p class="consequences-item__descr">Problemas respiratorios</p>
+                    </div>
+                    <div class="consequences-item">
+                        <div class="consequences-item__circle"></div>
+                        <p class="consequences-item__descr">Cargas financieras</p>
+                    </div>
+                    <div class="consequences-item">
+                        <div class="consequences-item__circle"></div>
+                        <p class="consequences-item__descr">Disminución de la calidad de vida</p>
+                    </div>
+                </div>
+                <!------ Версия для мобилки -->
+            </div>
+            <div class="consequences-banner">
+                <p class="consequences-banner__descr">Por lo tanto, es importante comprender que la obesidad no es solo
+                    un defecto cosmético externo, sino también <span>una enfermedad grave</span> que requiere atención e
+                    intervención
+                    médica para reducir riesgos y mejorar la salud en general.</p>
+            </div>
+        </div>
+    </div>
+</section>
+        <section class="testimonials">
+    <div class="container">
+        <h2 class="testimonials__title title">Testimonios de personas que lograron <span class="text-yellow">vencer la
+                obesidad:</span>
+        </h2>
+        <div class="testimonials__wrapper">
+            <div class="testimonials-item">
+                <div class="testimonials-item__head">
+                    <img src="../../images/testimonials-logo-1.png" alt="" class="testimonials-item__logo">
+                    <div class="testimonials-item__info">
+                        <h3 class="testimonials-item__name">Ana María Calvo</h3>
+                        <span class="testimonials-item__date">3d</span>
+                    </div>
+                    <div class="testimonials-item__more">
+                        <img src="../../images/testimonials-item-more.svg" alt="">
+                    </div>
+                </div>
+                <div class="testimonials-item__descr">
+                    <p>Fresh Life Clinic son auténticos profesionales en su campo. Su plan me ayudó a perder 10 kg en
+                        3 meses. No puedo creer que haya logrado estos resultados sin sufrir.</p>
+                </div>
+                <div class="testimonials-item__footer">
+                    <div class="testimonials-item__likes">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path
+                                d="M17 5C14.9 5 13.05 6.05 12 7.7C10.95 6.05 9.1 5 7 5C3.7 5 1 7.7 1 11C1 16.95 12 23 12 23C12 23 23 17 23 11C23 7.7 20.3 5 17 5Z"
+                                fill="#F44336" />
+                        </svg>
+                        <span>You & 50 other</span>
+                    </div>
+                    <div class="testimonials-item__comments">
+                        <span>25 Comments</span>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonials-item">
+                <div class="testimonials-item__head">
+                    <img src="../../images/testimonials-logo-2.png" alt="" class="testimonials-item__logo">
+                    <div class="testimonials-item__info">
+                        <h3 class="testimonials-item__name">Lucia Roman</h3>
+                        <span class="testimonials-item__date">21h</span>
+                    </div>
+                    <div class="testimonials-item__more">
+                        <img src="../../images/testimonials-item-more.svg" alt="">
+                    </div>
+                </div>
+                <div class="testimonials-item__descr">
+                    <p>¡Sonia es mi salvadora! Su plan de adelgazamiento cambió por completo mi vida. ¡Menos 15 kg y una
+                        satisfacción infinita con los resultados! #NuevaYo</p>
+                </div>
+                <div class="testimonials-item__footer">
+                    <div class="testimonials-item__likes">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path
+                                d="M17 5C14.9 5 13.05 6.05 12 7.7C10.95 6.05 9.1 5 7 5C3.7 5 1 7.7 1 11C1 16.95 12 23 12 23C12 23 23 17 23 11C23 7.7 20.3 5 17 5Z"
+                                fill="#F44336" />
+                        </svg>
+                        <span>You & 10 other</span>
+                    </div>
+                    <div class="testimonials-item__comments">
+                        <span>2 Comments</span>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonials-item">
+                <div class="testimonials-item__head">
+                    <img src="../../images/testimonials-logo-3.png" alt="" class="testimonials-item__logo">
+                    <div class="testimonials-item__info">
+                        <h3 class="testimonials-item__name">María Pilar Perez</h3>
+                        <span class="testimonials-item__date">5h</span>
+                    </div>
+                    <div class="testimonials-item__more">
+                        <img src="../../images/testimonials-item-more.svg" alt="">
+                    </div>
+                </div>
+                <div class="testimonials-item__descr">
+                    <p>🌟¡Sonia es sin duda una maga! Mis -20 kg se hicieron realidad gracias a sus consejos. ¡Me siento
+                        genial!</p>
+                </div>
+                <div class="testimonials-item__footer">
+                    <div class="testimonials-item__likes">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path
+                                d="M17 5C14.9 5 13.05 6.05 12 7.7C10.95 6.05 9.1 5 7 5C3.7 5 1 7.7 1 11C1 16.95 12 23 12 23C12 23 23 17 23 11C23 7.7 20.3 5 17 5Z"
+                                fill="#F44336" />
+                        </svg>
+                        <span>You & 5 other</span>
+                    </div>
+                    <div class="testimonials-item__comments">
+                        <span>0 Comments</span>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonials-item">
+                <div class="testimonials-item__head">
+                    <img src="../../images/testimonials-logo-4.png" alt="" class="testimonials-item__logo">
+                    <div class="testimonials-item__info">
+                        <h3 class="testimonials-item__name">Teresa Hernandez</h3>
+                        <span class="testimonials-item__date">2d</span>
+                    </div>
+                    <div class="testimonials-item__more">
+                        <img src="../../images/testimonials-item-more.svg" alt="">
+                    </div>
+                </div>
+                <div class="testimonials-item__descr">
+                    <p>Me dijeron que siguiera el plan, y eso hice. Resultado: perdí 14 kg. ¡Estoy muy feliz! El peso no
+                        regresa porque ahora sé cómo se origina la obesidad y cómo controlarla:)</p>
+                </div>
+                <div class="testimonials-item__footer">
+                    <div class="testimonials-item__likes">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path
+                                d="M17 5C14.9 5 13.05 6.05 12 7.7C10.95 6.05 9.1 5 7 5C3.7 5 1 7.7 1 11C1 16.95 12 23 12 23C12 23 23 17 23 11C23 7.7 20.3 5 17 5Z"
+                                fill="#F44336" />
+                        </svg>
+                        <span>You & 15 other</span>
+                    </div>
+                    <div class="testimonials-item__comments">
+                        <span>4 Comments</span>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonials-item">
+                <div class="testimonials-item__head">
+                    <img src="../../images/testimonials-logo-5.png" alt="" class="testimonials-item__logo">
+                    <div class="testimonials-item__info">
+                        <h3 class="testimonials-item__name">Sandra Martinez</h3>
+                        <span class="testimonials-item__date">9h</span>
+                    </div>
+                    <div class="testimonials-item__more">
+                        <img src="../../images/testimonials-item-more.svg" alt="">
+                    </div>
+                </div>
+                <div class="testimonials-item__descr">
+                    <p>Sonia, eres increíble y gracias por todo lo que has hecho por mi familia. Finalmente hemos
+                        adoptado un estilo de vida saludable y hemos perdido peso sin problemas. ¡Gracias una vez más!
+                    </p>
+                </div>
+                <div class="testimonials-item__footer">
+                    <div class="testimonials-item__likes">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path
+                                d="M17 5C14.9 5 13.05 6.05 12 7.7C10.95 6.05 9.1 5 7 5C3.7 5 1 7.7 1 11C1 16.95 12 23 12 23C12 23 23 17 23 11C23 7.7 20.3 5 17 5Z"
+                                fill="#F44336" />
+                        </svg>
+                        <span>You & 3 other</span>
+                    </div>
+                    <div class="testimonials-item__comments">
+                        <span>0 Comments</span>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonials-item">
+                <div class="testimonials-item__head">
+                    <img src="../../images/testimonials-logo-6.png" alt="" class="testimonials-item__logo">
+                    <div class="testimonials-item__info">
+                        <h3 class="testimonials-item__name">Carolina Gonzalez</h3>
+                        <span class="testimonials-item__date">1d</span>
+                    </div>
+                    <div class="testimonials-item__more">
+                        <img src="../../images/testimonials-item-more.svg" alt="">
+                    </div>
+                </div>
+                <div class="testimonials-item__descr">
+                    <p>Mi proceso de adelgazamiento fue fácil y sin sufrimiento. Comencé a entender los alimentos, sé
+                        qué es bueno y saludable, y qué es dañino y no se debe comer. ¡Recomiendo probar el plan de
+                        Fresh Life Clinic!
+                    </p>
+                </div>
+                <div class="testimonials-item__footer">
+                    <div class="testimonials-item__likes">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path
+                                d="M17 5C14.9 5 13.05 6.05 12 7.7C10.95 6.05 9.1 5 7 5C3.7 5 1 7.7 1 11C1 16.95 12 23 12 23C12 23 23 17 23 11C23 7.7 20.3 5 17 5Z"
+                                fill="#F44336" />
+                        </svg>
+                        <span>You & 34 other</span>
+                    </div>
+                    <div class="testimonials-item__comments">
+                        <span>8 Comments</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Слайдер в моб.версии -->
+        <div class="testimonials__wrapper testimonials__mobile swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide testimonials-item">
+                    <div class="testimonials-item__head">
+                        <img src="../../images/testimonials-logo-1.png" alt="" class="testimonials-item__logo">
+                        <div class="testimonials-item__info">
+                            <h3 class="testimonials-item__name">Ana María Calvo</h3>
+                            <span class="testimonials-item__date">3d</span>
+                        </div>
+                        <div class="testimonials-item__more">
+                            <img src="../../images/testimonials-item-more.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="testimonials-item__descr">
+                        <p>Fresh Life Clinic son auténticos profesionales en su campo. Su plan me ayudó a perder 10 kg
+                            en
+                            3 meses. No puedo creer que haya logrado estos resultados sin sufrir.</p>
+                    </div>
+                    <div class="testimonials-item__footer">
+                        <div class="testimonials-item__likes">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none">
+                                <path
+                                    d="M17 5C14.9 5 13.05 6.05 12 7.7C10.95 6.05 9.1 5 7 5C3.7 5 1 7.7 1 11C1 16.95 12 23 12 23C12 23 23 17 23 11C23 7.7 20.3 5 17 5Z"
+                                    fill="#F44336" />
+                            </svg>
+                            <span>You & 50 other</span>
+                        </div>
+                        <div class="testimonials-item__comments">
+                            <span>25 Comments</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide testimonials-item">
+                    <div class="testimonials-item__head">
+                        <img src="../../images/testimonials-logo-2.png" alt="" class="testimonials-item__logo">
+                        <div class="testimonials-item__info">
+                            <h3 class="testimonials-item__name">Lucia Roman</h3>
+                            <span class="testimonials-item__date">21h</span>
+                        </div>
+                        <div class="testimonials-item__more">
+                            <img src="../../images/testimonials-item-more.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="testimonials-item__descr">
+                        <p>¡Sonia es mi salvadora! Su plan de adelgazamiento cambió por completo mi vida. ¡Menos 15 kg y
+                            una
+                            satisfacción infinita con los resultados! #NuevaYo</p>
+                    </div>
+                    <div class="testimonials-item__footer">
+                        <div class="testimonials-item__likes">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none">
+                                <path
+                                    d="M17 5C14.9 5 13.05 6.05 12 7.7C10.95 6.05 9.1 5 7 5C3.7 5 1 7.7 1 11C1 16.95 12 23 12 23C12 23 23 17 23 11C23 7.7 20.3 5 17 5Z"
+                                    fill="#F44336" />
+                            </svg>
+                            <span>You & 10 other</span>
+                        </div>
+                        <div class="testimonials-item__comments">
+                            <span>2 Comments</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide testimonials-item">
+                    <div class="testimonials-item__head">
+                        <img src="../../images/testimonials-logo-3.png" alt="" class="testimonials-item__logo">
+                        <div class="testimonials-item__info">
+                            <h3 class="testimonials-item__name">María Pilar Perez</h3>
+                            <span class="testimonials-item__date">5h</span>
+                        </div>
+                        <div class="testimonials-item__more">
+                            <img src="../../images/testimonials-item-more.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="testimonials-item__descr">
+                        <p>🌟¡Sonia es sin duda una maga! Mis -20 kg se hicieron realidad gracias a sus consejos. ¡Me
+                            siento
+                            genial!</p>
+                    </div>
+                    <div class="testimonials-item__footer">
+                        <div class="testimonials-item__likes">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none">
+                                <path
+                                    d="M17 5C14.9 5 13.05 6.05 12 7.7C10.95 6.05 9.1 5 7 5C3.7 5 1 7.7 1 11C1 16.95 12 23 12 23C12 23 23 17 23 11C23 7.7 20.3 5 17 5Z"
+                                    fill="#F44336" />
+                            </svg>
+                            <span>You & 5 other</span>
+                        </div>
+                        <div class="testimonials-item__comments">
+                            <span>0 Comments</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide testimonials-item">
+                    <div class="testimonials-item__head">
+                        <img src="../../images/testimonials-logo-4.png" alt="" class="testimonials-item__logo">
+                        <div class="testimonials-item__info">
+                            <h3 class="testimonials-item__name">Teresa Hernandez</h3>
+                            <span class="testimonials-item__date">2d</span>
+                        </div>
+                        <div class="testimonials-item__more">
+                            <img src="../../images/testimonials-item-more.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="testimonials-item__descr">
+                        <p>Me dijeron que siguiera el plan, y eso hice. Resultado: perdí 14 kg. ¡Estoy muy feliz! El
+                            peso no
+                            regresa porque ahora sé cómo se origina la obesidad y cómo controlarla:)</p>
+                    </div>
+                    <div class="testimonials-item__footer">
+                        <div class="testimonials-item__likes">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none">
+                                <path
+                                    d="M17 5C14.9 5 13.05 6.05 12 7.7C10.95 6.05 9.1 5 7 5C3.7 5 1 7.7 1 11C1 16.95 12 23 12 23C12 23 23 17 23 11C23 7.7 20.3 5 17 5Z"
+                                    fill="#F44336" />
+                            </svg>
+                            <span>You & 15 other</span>
+                        </div>
+                        <div class="testimonials-item__comments">
+                            <span>4 Comments</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide testimonials-item">
+                    <div class="testimonials-item__head">
+                        <img src="../../images/testimonials-logo-5.png" alt="" class="testimonials-item__logo">
+                        <div class="testimonials-item__info">
+                            <h3 class="testimonials-item__name">Sandra Martinez</h3>
+                            <span class="testimonials-item__date">9h</span>
+                        </div>
+                        <div class="testimonials-item__more">
+                            <img src="../../images/testimonials-item-more.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="testimonials-item__descr">
+                        <p>Sonia, eres increíble y gracias por todo lo que has hecho por mi familia. Finalmente hemos
+                            adoptado un estilo de vida saludable y hemos perdido peso sin problemas. ¡Gracias una vez
+                            más!
+                        </p>
+                    </div>
+                    <div class="testimonials-item__footer">
+                        <div class="testimonials-item__likes">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none">
+                                <path
+                                    d="M17 5C14.9 5 13.05 6.05 12 7.7C10.95 6.05 9.1 5 7 5C3.7 5 1 7.7 1 11C1 16.95 12 23 12 23C12 23 23 17 23 11C23 7.7 20.3 5 17 5Z"
+                                    fill="#F44336" />
+                            </svg>
+                            <span>You & 3 other</span>
+                        </div>
+                        <div class="testimonials-item__comments">
+                            <span>0 Comments</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide testimonials-item">
+                    <div class="testimonials-item__head">
+                        <img src="../../images/testimonials-logo-6.png" alt="" class="testimonials-item__logo">
+                        <div class="testimonials-item__info">
+                            <h3 class="testimonials-item__name">Carolina Gonzalez</h3>
+                            <span class="testimonials-item__date">1d</span>
+                        </div>
+                        <div class="testimonials-item__more">
+                            <img src="../../images/testimonials-item-more.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="testimonials-item__descr">
+                        <p>Mi proceso de adelgazamiento fue fácil y sin sufrimiento. Comencé a entender los alimentos,
+                            sé
+                            qué es bueno y saludable, y qué es dañino y no se debe comer. ¡Recomiendo probar el plan de
+                            Fresh Life Clinic!
+                        </p>
+                    </div>
+                    <div class="testimonials-item__footer">
+                        <div class="testimonials-item__likes">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none">
+                                <path
+                                    d="M17 5C14.9 5 13.05 6.05 12 7.7C10.95 6.05 9.1 5 7 5C3.7 5 1 7.7 1 11C1 16.95 12 23 12 23C12 23 23 17 23 11C23 7.7 20.3 5 17 5Z"
+                                    fill="#F44336" />
+                            </svg>
+                            <span>You & 34 other</span>
+                        </div>
+                        <div class="testimonials-item__comments">
+                            <span>8 Comments</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="testimonials-pagination swiper-pagination"></div>
+        </div>
+        <!-- Конец - Слайдер в моб.версии -->
+    </div>
+</section>
+        <section class="hero hero-bottom">
+    <div class="container">
+        <div class="hero__inner">
+            <div class="hero__text">
+                <h1 class="title title-50">¿Quieres perder peso pero no sabes por dónde empezar?</h1>
+                <p class="hero__descr">¡Obtén un plan de adelgazamiento personalizado de un dietista calificado ya
+                    mismo!</p>
+                <div class="hero__plan">
+                    <span>¿Qué incluye el plan de adelgazamiento?</span>
+                    <ul class="list">
+                        <li>Cómo comenzar a perder peso hoy mismo.</li>
+                        <li>Selección adecuada de alimentos.</li>
+                        <li>Estilo de vida y entrenamiento.</li>
+                        <li>Secretos y consejos para quemar grasa rápidamente.</li>
+                        <li>Cómo mantener los resultados de por vida.</li>
+                    </ul>
+                </div>
+
+                <div class="hero__proposal proposal">
+                    <div class="proposal__shape">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <g clip-path="url(#clip0_68_729)">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M7.2 7.97356e-07C6.13913 7.97356e-07 5.12172 0.421428 4.37157 1.17157C3.62143 1.92172 3.2 2.93913 3.2 4V4.4576C3.2 5.1744 3.4128 5.8416 3.7792 6.4H2.4C1.76348 6.4 1.15303 6.65286 0.702944 7.10294C0.252856 7.55303 0 8.16348 0 8.8L0 10.4C0 11.0365 0.252856 11.647 0.702944 12.0971C1.15303 12.5471 1.76348 12.8 2.4 12.8H11.2V6.4H12.8V12.8H21.6C22.2365 12.8 22.847 12.5471 23.2971 12.0971C23.7471 11.647 24 11.0365 24 10.4V8.8C24 8.16348 23.7471 7.55303 23.2971 7.10294C22.847 6.65286 22.2365 6.4 21.6 6.4H20.2208C20.5872 5.8416 20.8 5.1744 20.8 4.4576V4C20.8 2.93913 20.3786 1.92172 19.6284 1.17157C18.8783 0.421428 17.8609 7.97356e-07 16.8 7.97356e-07C14.7632 7.97356e-07 12.9792 1.088 12 2.7136C11.5022 1.88541 10.7985 1.20021 9.95736 0.724676C9.11621 0.249143 8.16627 -0.000514917 7.2 7.97356e-07ZM12.8 6.4H17.2576C18.3296 6.4 19.2 5.5296 19.2 4.4576V4C19.2 3.36348 18.9471 2.75303 18.4971 2.30294C18.047 1.85286 17.4365 1.6 16.8 1.6C15.7391 1.6 14.7217 2.02143 13.9716 2.77157C13.2214 3.52172 12.8 4.53913 12.8 5.6V6.4ZM11.2 6.4H6.7424C5.6704 6.4 4.8 5.5296 4.8 4.4576V4C4.8 3.36348 5.05286 2.75303 5.50294 2.30294C5.95303 1.85286 6.56348 1.6 7.2 1.6C7.72529 1.6 8.24543 1.70346 8.73073 1.90448C9.21604 2.1055 9.65699 2.40014 10.0284 2.77157C10.3999 3.14301 10.6945 3.58396 10.8955 4.06927C11.0965 4.55457 11.2 5.07471 11.2 5.6V6.4Z"
+                                    fill="#008202" />
+                                <path
+                                    d="M11.2 14.4H1.59998V20C1.59998 21.0609 2.0214 22.0783 2.77155 22.8284C3.52169 23.5786 4.53911 24 5.59998 24H11.2V14.4ZM12.8 24H18.4C19.4608 24 20.4783 23.5786 21.2284 22.8284C21.9785 22.0783 22.4 21.0609 22.4 20V14.4H12.8V24Z"
+                                    fill="#008202" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_68_729">
+                                    <rect width="24" height="24" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </div>
+                    <p>¡Hemos activado una oferta especial para ti! ¡Completa la encuesta y recibe tu plan de
+                        adelgazamiento personalizado <span>GRATIS!</span></p>
+                </div>
+                <button class="btn hero__btn">
+                    <div class="btn--arrow"><img src="../../images/btn-arrow.svg" alt=""></div>¡Obtener el plan de
+                    adelgazamiento!
+                </button>
+            </div>
+            <div class="hero__img">
+                <img src="../../images/hero__bg.png" alt="">
+                <img src="../../images/hero__bg-2.png" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+        <footer class="footer">
+    <div class="container">
+        <div class="footer__inner">
+            <p class="footer__copy">© 2023 Fresh Life Clinic — All rights reserved.</p>
+            <a href="" class="footer__link">Terms & Conditions | Privacy Policy</a>
+        </div>
+    </div>
+</footer>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <script src="../../js/app.js"></script>
+</body>
+
+</html>
