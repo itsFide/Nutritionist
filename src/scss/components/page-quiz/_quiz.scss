@@ -70,7 +70,9 @@
             font-weight: 400;
             line-height: normal;
             color: $black;
+            
         }
+        
         & input[type=radio]{
             display: none;
         }
@@ -154,19 +156,20 @@
 
         }
     }
-}
-.quiz-progress {
-    width: 100%;
-    height: 10px;
-    border-radius: 5px;
-    margin-top: 29px;
-    background-color: $gray; /* Цвет фона линии прогресса */
+    &-progress {
+        width: 100%;
+        height: 10px;
+        border-radius: 5px;
+        margin-top: 29px;
+        background-color: $gray; /* Цвет фона линии прогресса */
+        
+    }
+    &-progress-bar {
+        height: 100%;
+        border-radius: 5px;
     
+        background-color: $green; /* Цвет заполняющейся линии */
+        transition: all 0.5s; /* Анимация изменения ширины */
+    }
 }
-.quiz-progress-bar {
-    height: 100%;
-    border-radius: 5px;
 
-    background-color: $green; /* Цвет заполняющейся линии */
-    transition: all 0.5s; /* Анимация изменения ширины */
-}
