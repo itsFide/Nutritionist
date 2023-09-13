@@ -1,0 +1,11 @@
+.step-2{
+    &__list{
+        margin-top: 50px;
+    }
+    &__descr{
+        width: 65%;
+    }
+    & .step-img{
+        background-position: 0 24%;
+    }
+}

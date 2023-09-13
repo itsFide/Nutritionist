@@ -10,6 +10,9 @@ body{
     font-family: 'Merriweather Sans', sans-serif;
     // overflow-x: hidden;
 }
+a{
+    color: $blue;
+}
 main.main{
     overflow: hidden;
 }
@@ -17,6 +20,9 @@ main.main{
     max-width: $container;
     padding: 0 30px;
     margin: 0 auto;
+}
+.m-10{
+    margin: 10px 0;
 }
 .title{
     font-family: "Merriweather";
@@ -139,6 +145,160 @@ main.main{
     transition: all .3s ease-in-out;
 }
 
+
+.step{
+    & h2{
+        font-family: "Merriweather";
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        margin-top: 120px;
+        color: $black_02;
+        margin-bottom: 35px;
+        & span{
+            color: $green;
+        } 
+    }
+    .list-has-bg{
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        margin-bottom: 35px;
+        & li{
+            padding: 10px 10px 10px 44px;
+            // display: flex;
+            // align-items: center;
+            // gap: 15px;
+            background-color: $gray;
+            border-radius: 10px;
+            position: relative;
+            width: fit-content;
+            color: $black_02;
+            /* text_1 */
+            font-family: "Merriweather Sans";
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            &::before{
+                content: "";
+                position: absolute;
+                left: 19px;
+                top: 20px;
+                transform: translate(0%,-50%);
+                width: 10px;
+                height: 10px;
+                background-color: $yellow;
+                border-radius: 50%;
+            }
+        }
+    }
+    .step-list{
+        margin-top: 35px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        list-style: none;
+        padding-left: 30px;
+        margin-bottom: 35px;
+        &-title{
+            font-family: "Merriweather Sans";
+            font-size: 18px;
+            color: $black_02;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+
+        }
+        & li{
+            position: relative;
+            padding-left: 17px;
+            width: 68%;
+            color: $black_02;
+            font-size: 16px;
+            & a{
+                color: $blue;
+            }
+            &::before{
+                content: "";
+                width: 7px;
+                height: 7px;
+                background-color: $green;
+                border-radius: 50%;
+                position: absolute;
+                left: 0;
+                top: 6px;
+            }
+        }
+    }
+    .footer{
+        margin-top: 68px;
+    }
+}
+.step-subtitle{
+    // margin-top: 35px;
+    font-family: "Merriweather Sans";
+    color: $black_02;
+    font-size: 23px;
+    font-style: normal;
+    width: 65%;
+    font-weight: 400;
+    line-height: normal;
+}
+.step-img{
+    background-color: $gray;
+    border-radius: 30px;
+    margin: 50px 0;
+    height: 485px;
+    display: flex;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    & img{
+        border-radius: 30px;
+        width: 100%;
+    }
+}
+.step-descr{
+    font-family: "Merriweather Sans";
+    font-size: 16px;
+    color: $black_02;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    // margin-top: 35px;
+    width: 66%;
+}
+.attention{
+    padding: 15px 20px 15px 30px;
+    background: $gray;
+    border-radius: 20px;
+    width: 69%;
+    margin-top: 42px;
+    position: relative;
+    &::before{
+        content: url('../images/consequences-shape-mobile.svg');
+        position: absolute;
+        left: -1%;
+        top: -25px;
+    }
+    & p{
+        font-family: "Merriweather Sans";
+        color: $black_02;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+}
+.h-550{
+    height: 550px;
+}
+.h-485{
+    height: 485px;
+}
   @keyframes pulse {
     0% {
       box-shadow: 0 0 0 0 $green;

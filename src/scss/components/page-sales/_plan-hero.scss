@@ -1,0 +1,46 @@
+.plan-hero {
+    margin-top: 55px;
+    // .plan-hero__inner
+
+    &__inner {
+    }
+
+    // .plan-hero__title
+
+    &__title {
+        text-align: center;
+    }
+
+    // .plan-hero__descr
+
+    &__descr {
+        font-family: "Merriweather Sans";
+        font-size: 23px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        color: $black_02;
+        width: 70%;
+        margin-top: 35px;
+    }
+
+
+    // .plan-hero__img
+
+    &__img {
+        margin-top: 50px;
+        background-color: $gray;
+        border-radius: 30px;
+        display: flex;
+        height: 485px;
+        background-size: 83%;
+        background-position: -3px 62%;
+        background-repeat: no-repeat;
+        background-color: $yellow;
+        & img{
+            width: 100%;
+            border-radius: 30px;
+        }
+        
+    }
+}

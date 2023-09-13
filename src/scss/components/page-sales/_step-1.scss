@@ -1,0 +1,29 @@
+.step-1{
+    &__subtitle{
+        width: 65%;
+    }
+    &__descr{
+        width: 69%;
+    }
+}
+.step{
+    &-items{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        margin-bottom: 35px;
+    }
+    &-item{
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        background-color: $gray;
+        border-radius: 20px;
+        padding: 20px;
+        width: 74.5%;
+        &__descr{
+            width: 91%;
+        }
+    }
+    
+}
