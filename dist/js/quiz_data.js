@@ -32,13 +32,13 @@ const quizData = [
     answers: [
       {
         answer_placeholder: "Altura",
-        answer_title: "altura",
-        type: "text",
+        answer_title: "",
+        type: "tel",
       },
       {
         answer_placeholder: "Peso:",
-        answer_title: "peso",
-        type: "text",
+        answer_title: "",
+        type: "tel",
       },
     ],
   },
@@ -95,7 +95,7 @@ const quizData = [
     answers: [
       {
         answer_title: "",
-        type: "text",
+        type: "tel",
       },
     ],
   },
