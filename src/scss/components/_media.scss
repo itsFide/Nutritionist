@@ -175,9 +175,9 @@
             width: 100%;
         }
         &__img img:nth-child(1) {
-            width: 99%;
+            width: 97%;
             right: -59%;
-            top: 83%;
+            top: 78%;
             transform: translate(0%, -50%);
         }
         &__descr{
@@ -195,6 +195,9 @@
         }
         &__btn{
             margin-left: 10px; 
+        }
+        &-bottom{
+            margin-top: 30px;
         }
     }
     .proposal{
@@ -386,6 +389,8 @@
     }
     .testimonials{
         margin-top: 100px;
+        padding-bottom: 100px;
+        background-image: url('../images/testimonials-bg-tablet.svg');
         &__wrapper{
             display: none;
             padding: 60px 60px 38px 60px;
@@ -507,6 +512,9 @@
             width: 90%;
         }
     }
+    .footer{
+        margin-top: 130px;
+    }
 }
 @media (max-width:690px){
     .consequences__img img{
@@ -583,6 +591,15 @@
         &__btn{
             margin-left: 0;
         }
+        
+        &__img img:nth-child(1){
+            z-index: -1;
+        }
+    
+    }
+    .footer{
+        // position: relative;
+        // z-index: -2;
     }
     .list li{
         font-size: 14px;

@@ -18,4 +18,4 @@ const swiper = new Swiper('.testimonials__mobile', {
             slidesPerView:1.5,
         },
     }
-  });
+});

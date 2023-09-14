@@ -24,7 +24,20 @@
     }
 
     // .footer__link
-
+    &__links{
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        & span{
+            font-family: "Merriweather Sans";
+            font-size: 16px;
+            color: $black;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal;
+            text-decoration: none;    
+        }
+    }
     &__link {
         /* text_2 */
         font-family: "Merriweather Sans";

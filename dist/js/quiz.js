@@ -1,3 +1,4 @@
+// Переход с первого экрана на сам квиз
 document.addEventListener('DOMContentLoaded', ()=>{
     let quizHeroBtn = document.querySelector('.quiz-hero__btn')
     let quizHero = document.querySelector('.quiz-hero');
@@ -7,6 +8,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
         quizHero.style.display = 'none'
     })
 })
+// Шаблон квиза
 const quizTemplate = (data = [], dataLength, options) => {
 	const {number, title, answer_placeholder} = data;
 	const {nextBtnText} = options;
@@ -16,9 +18,9 @@ const quizTemplate = (data = [], dataLength, options) => {
 			<div class="quiz-question__label">
                 ${item.answer_placeholder ? `<p class="quiz-question__input__title">${item.answer_placeholder}</p>` : ""}
 
-				<input id="${item.answer_title}" type="${item.type}" data-valid="false" class="quiz-question__answer" name="${data.answer_alias}" ${item.type == 'text' ? 'placeholder=""' : ''} value="${item.type !== 'text' ? item.answer_title : ''}">
+				<input id="${item.answer_title}" type="${item.type}" placeholder="ㅤ" data-valid="false" class="quiz-question__answer" name="${data.answer_alias}" ${item.type == 'text' ? 'placeholder=""' : ''} value="${item.type !== 'text' ? item.answer_title : ''}">
 
-                ${item.type === "radio" ? 
+                ${item.type === "radio" || item.type === "checkbox"  ? 
                 `<label for="${item.answer_title}">${item.answer_title}</label>` 
                 : 
                 ""}
@@ -95,14 +97,16 @@ class Quiz {
 				this.send();
 			}
 
-            // Добавьте обработчики для радиокнопок "Sí" и "No" вопроса 10:
+            // Обработчик "Sí" и "No" вопроса 10:
             if (quizData[this.counter].number === 10) {
                 if (e.target.type === 'radio' && (e.target.id === 'Sí' || e.target.id === 'No')) {
                     const answerDescr = this.$el.querySelector('#answerDescr');
+                    const sendBtn = this.$el.querySelector('.quiz-question__send');
                     const selectedAnswer = quizData[this.counter].answers.find(answer => answer.answer_title === e.target.id);
 
                     if (selectedAnswer) {
                         answerDescr.innerHTML = selectedAnswer.answer_descr;
+                        sendBtn.classList.add('show')
                         answerDescr.style.display = 'block'; // Показываем текст из answer_descr
                     }
                 }
@@ -136,12 +140,12 @@ class Quiz {
                 
 
 				if (this.counter + 1 == this.dataLength) {
-					this.$el.insertAdjacentHTML('beforeend', `<button type="button" class="quiz-question__btn btn" data-send>
+					this.$el.insertAdjacentHTML('beforeend', `<a target="_blank" href="https://www.google.com/" class="quiz-question__send quiz-question__btn btn" data-send>
                     <div class="btn--arrow">
                         <img src="../../images/btn-arrow.svg" alt="">
                     </div> 
                     ${this.options.sendBtnText}
-                    </button>`);
+                    </a>`);
 					this.$el.querySelector('[data-next-btn]').remove();
 				}
 			}
@@ -161,6 +165,8 @@ class Quiz {
       
 			switch(el.type) {
 				case 'text':
+                    (el.value) !== "" ? isValid = true : isValid = false;
+                case 'tel':
                     (el.value) !== "" ? isValid = true : isValid = false
 				case 'checkbox':
 					(el.checked) ? isValid = true : el.classList.add('error');

@@ -1,4 +1,12 @@
 .quiz{
+    &-page{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        & main{
+            flex: 1 0 auto;
+        }
+    }
     &-wrapper{
         display: none;
     }
@@ -56,13 +64,16 @@
         margin-top: 35px;
     }
     &-question__label{
-            
-        & input[type=text]{
+        & input[type=checkbox]{
+            display: none;
+        }
+        & input[type=text],
+        & input[type=tel]{
             border: none;
             width: 112px;
             background-color: $gray;
             border-radius: 5px;
-            padding: 10px;
+            padding: 10px 20px;
             outline: none;
             font-family: "Merriweather Sans";
             font-size: 23px;
@@ -71,6 +82,10 @@
             line-height: normal;
             color: $black;
             
+            &::placeholder{
+                border-bottom: 3px solid #bdbdbd; /* Подчеркивание */
+
+            }
         }
         
         & input[type=radio]{
@@ -97,6 +112,10 @@
         }
     }
     .quiz-question__label input[type=radio]:checked + label {
+        background: $green;
+        color: #fff;
+    }
+    .quiz-question__label input[type=checkbox]:checked + label {
         background: $green;
         color: #fff;
     }
@@ -170,6 +189,12 @@
     
         background-color: $green; /* Цвет заполняющейся линии */
         transition: all 0.5s; /* Анимация изменения ширины */
+    }
+    &-question__send{
+        display: none;
+        &.show{
+            display: flex;
+        }
     }
 }
 

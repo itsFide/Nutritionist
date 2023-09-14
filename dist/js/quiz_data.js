@@ -21,7 +21,7 @@ const quizData = [
     answers: [
       {
         answer_title: "",
-        type: "text",
+        type: "tel",
       },
     ],
   },
@@ -68,23 +68,23 @@ const quizData = [
     answers: [
       {
         answer_title: "Carne",
-        type: "radio",
+        type: "checkbox",
       },
       {
         answer_title: "Verduras",
-        type: "radio",
+        type: "checkbox",
       },
       {
         answer_title: "Cereales",
-        type: "radio",
+        type: "checkbox",
       },
       {
         answer_title: "Frutas",
-        type: "radio",
+        type: "checkbox",
       },
       {
         answer_title: "Comida rápida",
-        type: "radio",
+        type: "checkbox",
       },
     ],
   },
