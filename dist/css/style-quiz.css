@@ -1140,7 +1140,7 @@ a.btn {
   .hero__btn {
     margin-left: 0;
   }
-  .hero__img img:nth-child(1) {
+  .hero-bottom .hero__img img:nth-child(1) {
     z-index: -1;
   }
   .list li {
@@ -1189,7 +1189,6 @@ a.btn {
     height: 16px;
   }
   .about {
-    background-image: url("../images/about-bg-mobile.svg");
     margin-top: 25px;
   }
   .about__inner {
@@ -1265,7 +1264,6 @@ a.btn {
   }
   .action {
     margin-top: 55px;
-    background-image: url("../images/action-bg-mobile.svg");
   }
   .action__img::before {
     border-radius: 40px;
@@ -1521,5 +1519,22 @@ a.btn {
 @media (max-width: 385px) {
   .header__logo img {
     width: 100px;
+  }
+  .about {
+    background-image: url("../images/about-bg-mobile.svg");
+    background-position: 0 -10%;
+  }
+  .about__inner {
+    padding-bottom: 100px;
+  }
+  .reasons {
+    padding-top: 14px;
+  }
+  .action {
+    background-image: url("../images/action-bg-mobile.svg");
+    background-position: 0 -5%;
+  }
+  .action__inner {
+    padding-bottom: 108px;
   }
 }
