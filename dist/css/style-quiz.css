@@ -576,10 +576,10 @@ a.btn {
   transition: all 0.5s; /* Анимация изменения ширины */
 }
 .quiz-question__send {
-  display: none;
+  display: none !important;
 }
 .quiz-question__send.show {
-  display: flex;
+  display: inline-flex !important;
 }
 
 .footer {

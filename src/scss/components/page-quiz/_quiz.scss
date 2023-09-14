@@ -191,9 +191,9 @@
         transition: all 0.5s; /* Анимация изменения ширины */
     }
     &-question__send{
-        display: none;
+        display: none !important;
         &.show{
-            display: flex;
+            display: inline-flex !important;
         }
     }
 }
